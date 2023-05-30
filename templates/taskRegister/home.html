@@ -1,0 +1,17 @@
+{% extends 'taskRegister/base.html' %}
+
+{% block container %}
+    <div class="contentBlog d-flex justify-content-evenly">
+        <div class="contentInfo justify-content-center align-self-center">
+            <h1>Organize your <br> work and life, finally.</h1>
+            <h4>Become focused, organized, and calm with <br> Todoist. The world’s #1 task manager and to-do <br> list app.</h4>
+            <div class="addTask">
+                <a class="addTaskBtn btn btn-primary mt-5" style="border-radius: 55; width: 30%;" href= {% url 'addTask' %}>Add Task</a>
+            </div>
+        </div>
+        <div class="contentImg" style="width: 90vh; ">
+            <img src="https://imageio.forbes.com/specials-images/dam/imageserve/1092571024/0x0.jpg?format=jpg&width=1200" style="border-radius: 5%; width: 100%;" alt="todolist img">
+        </div>
+    </div>
+    
+{% endblock container %}
